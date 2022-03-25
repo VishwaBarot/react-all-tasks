@@ -1,0 +1,36 @@
+.radioGroup {
+  display: flex;
+}
+.btns {
+  margin: 18px;
+  padding: 8px;
+  border-radius: 3px !important;
+  width: 100px;
+  font-weight: bold;
+}
+.register-form form {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: lavender;
+  width: 100%;
+  margin: 10px;
+}
+label {
+  color: black;
+  font-weight: 400;
+}
+.form-group {
+  margin-bottom: 10px;
+}
+.radioGroup label {
+  margin-right: 15px;
+}
+.cards {
+  background-color: lightcyan !important;
+  color: teal !important;
+  font-weight: 500 !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+p {
+  margin: 10px;
+}
