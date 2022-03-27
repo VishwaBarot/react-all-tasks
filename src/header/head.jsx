@@ -45,6 +45,9 @@ export default class Header extends React.Component {
             <Nav.Link>
               <NavLink to="/day12"> Day12 </NavLink>
             </Nav.Link>
+            <Nav.Link>
+              <NavLink to="/day13"> Day13 </NavLink>
+            </Nav.Link>
           </Nav>
         </Container>
       </Navbar>

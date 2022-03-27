@@ -1,5 +1,7 @@
 import * as React from 'react';
 import { DataGrid } from '@mui/x-data-grid';
+import Button from 'react-bootstrap/Button';
+import '../styles/day12.css';
 
 const columns = [
   { field: 'id', headerName: 'ID', width: 70 },
@@ -21,44 +23,78 @@ const columns = [
 
 const rows = [
   {
-    id: 1, firstName: 'Raquel', lastName: 'Murrilo', age: 35, city: 'San Francisco',
+    id: 1,
+    firstName: 'Raquel',
+    lastName: 'Murrilo',
+    age: 35,
+    city: 'San Francisco',
   },
   {
-    id: 2, firstName: 'Sergio', lastName: 'Marquina', age: 40, city: 'Spain',
+    id: 2,
+    firstName: 'Sergio',
+    lastName: 'Marquina',
+    age: 40,
+    city: 'Spain',
   },
   {
-    id: 3, firstName: 'Monica', lastName: 'Gaztambide', age: 45, city: 'Madrid',
+    id: 3,
+    firstName: 'Monica',
+    lastName: 'Gaztambide',
+    age: 45,
+    city: 'Madrid',
   },
   {
-    id: 4, firstName: 'Alicia', lastName: 'Sierra', age: 26, city: 'Spain',
+    id: 4,
+    firstName: 'Alicia',
+    lastName: 'Sierra',
+    age: 26,
+    city: 'Spain',
   },
   {
-    id: 5, firstName: 'Alison', lastName: 'Parker', age: 46, city: 'United States',
+    id: 5,
+    firstName: 'Alison',
+    lastName: 'Parker',
+    age: 46,
+    city: 'United States',
   },
   {
-    id: 6, firstName: 'Santiago', lastName: 'Lopez', age: 45, city: 'Madrid',
+    id: 6,
+    firstName: 'Santiago',
+    lastName: 'Lopez',
+    age: 45,
+    city: 'Madrid',
   },
-//   {
-//     id: 7, firstName: 'Ferrara', lastName: 'Clifford', age: 44, city: 'Texas',
-//   },
-//   {
-//     id: 8, firstName: 'Rossini', lastName: 'Frances', age: 36, city: 'New Jersey',
-//   },
-//   {
-//     id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65, city: 'New Jersey',
-//   },
+  //   {
+  //     id: 7, firstName: 'Ferrara', lastName: 'Clifford', age: 44, city: 'Texas',
+  //   },
+  //   {
+  //     id: 8, firstName: 'Rossini', lastName: 'Frances', age: 36, city: 'New Jersey',
+  //   },
+  //   {
+  //     id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65, city: 'New Jersey',
+  //   },
 ];
 
 export default function Day12() {
   return (
-    <div style={{ height: 400, width: '100%' }}>
-      <DataGrid
-        rows={rows}
-        columns={columns}
-        pageSize={5}
-        rowsPerPageOptions={[5]}
-        checkboxSelection
-      />
-    </div>
+    <>
+      <div>
+        <label>Enter Name:</label>
+        <input name="Name" type="text" />
+        <Button variant="success" size="sm">
+          Success
+        </Button>
+      </div>
+      <div style={{ height: 400, width: '100%' }}>
+        <DataGrid
+          rows={rows}
+          columns={columns}
+          pageSize={5}
+          rowsPerPageOptions={[5]}
+          checkboxSelection
+        />
+      </div>
+      ,
+    </>
   );
 }
